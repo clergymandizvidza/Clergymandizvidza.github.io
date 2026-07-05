@@ -1,14 +1,251 @@
-<div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="spiritual.html">Spiritual</a>
-    <a href="professional.html">Professional</a>
-    <a href="projects.html">Projects</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clergy Mandizvidza – Engineering Portfolio</title>
 
-    <a href="water-systems.html">Water Systems</a>
-    <a href="solar.html">Solar PV & Battery Storage</a>
-    <a href="threephase.html">Three‑Phase & Motor Control</a>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
 
-    <a href="profile.html">Profile</a> <!-- ⭐ Combined page ⭐ -->
+        /* HEADER */
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e3a8a;
+            padding: 12px 30px;
+            color: white;
+        }
 
-    <i class="fa fa-search search-icon" onclick="toggleSearch()"></i>
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-section img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .search-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* SEARCH BAR */
+        #searchBar {
+            display: none;
+            width: 90%;
+            margin: 15px auto;
+            padding: 10px;
+            border: 2px solid #1e3a8a;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('index.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .hero h1, .hero h2, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: 0;
+            border-top: 2px solid #1e3a8a;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e3a8a;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="topnav">
+    <div class="logo-section">
+        <img src="WhatsApp Image 2026-05-23 at 17.40.05.jpeg" alt="Profile Photo">
+        <div class="logo-text">Clergy Mandizvidza</div>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="professional.html">Professional</a>
+        <a href="projects.html">Projects</a>
+
+        <!-- Engineering Pages -->
+        <a href="water-systems.html">Water Systems</a>
+        <a href="solar.html">Solar PV</a>
+        <a href="threephase.html">Three‑Phase</a>
+
+        <!-- Combined Personal Page -->
+        <a href="profile.html">Profile</a>
+
+        <i class="fa fa-search search-icon" onclick="toggleSearch()"></i>
+    </div>
 </div>
+
+<!-- SEARCH BAR -->
+<input type="text" id="searchBar" placeholder="Search this page..." onkeyup="searchPage()">
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Clergy Mandizvidza</h1>
+    <h2>Electrical & Utilities Technician | Industrial Maintenance | Power Systems</h2>
+    <p>
+        A safety‑driven engineering professional with hands‑on experience in electrical distribution, 
+        industrial plant maintenance, water systems, and high‑voltage operations. Dedicated to delivering 
+        reliable engineering solutions through precision, compliance, and continuous improvement.
+    </p>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h2>Welcome to My Engineering Portfolio</h2>
+
+    <p>
+        I am Clergy Mandizvidza, an Electrical and Utilities Technician based in Preston, UK, with over 
+        6 years of practical experience across power systems, industrial plant operations, water systems, 
+        and electrical maintenance. My work spans high‑voltage grid operations, industrial machinery 
+        servicing, and utilities engineering.
+    </p>
+
+    <p>
+        This portfolio showcases my engineering background, professional qualifications, technical 
+        competencies, and hands‑on project experience across multiple sectors including electrical 
+        distribution, industrial manufacturing, and water processing.
+    </p>
+
+    <hr>
+
+    <h2>Engineering Portfolio Sections</h2>
+   <ul>
+    <li><a href="profile.html">About Me</a></li>
+    <li><a href="professional.html">Professional Summary</a></li>
+    <li><a href="skills.html">Engineering Skills & Certifications</a></li>
+    <li><a href="projects.html">Projects & Field Work</a></li>
+    <li><a href="water-systems.html">Water Systems & Pump Maintenance</a></li>
+    <li><a href="threephase.html">Three‑Phase & Motor Control Systems</a></li>
+    <li><a href="solar.html">Solar PV & Battery Storage Commissioning</a></li>
+    <li><a href="profile.html">Contact Information</a></li>
+</ul>
+
+
+    <hr>
+
+    <p><strong>Thank you for visiting my engineering portfolio.</strong></p>
+
+</div>
+
+<footer>
+    © 2026 Clergy Mandizvidza — Engineering Portfolio
+</footer>
+
+<script>
+function toggleSearch() {
+    let bar = document.getElementById("searchBar");
+    bar.style.display = (bar.style.display === "none" || bar.style.display === "") ? "block" : "none";
+}
+
+function searchPage() {
+    let input = document.getElementById("searchBar").value.toLowerCase();
+    let bodyText = document.body.innerText.toLowerCase();
+
+    if (input.length > 2) {
+        console.log(bodyText.includes(input) ? "Match found" : "No match");
+    }
+}
+</script>
+
+</body>
+</html>
